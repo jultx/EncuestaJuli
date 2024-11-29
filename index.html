@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Encuesta</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <!-- Título de la página -->
+    <h1 id="title">Formulario de Encuesta v5</h1>
+
+    <!-- Descripción -->
+    <p id="description">Por favor, complete el siguiente formulario para ayudarnos a mejorar.</p>
+
+    <!-- Formulario -->
+    <form id="survey-form">
+
+        <!-- Campo de Nombre -->
+        <label id="name-label" for="name">Nombre:</label>
+        <input 
+            id="name" 
+            type="text" 
+            name="name" 
+            required 
+            placeholder="Escribe tu nombre"
+        >
+
+        <!-- Campo de Email -->
+        <label id="email-label" for="email">Correo electrónico:</label>
+        <input 
+            id="email" 
+            type="email" 
+            name="email" 
+            required 
+            placeholder="Escribe tu correo electrónico"
+        >
+
+        <!-- Campo de Número -->
+        <label id="number-label" for="number">Edad:</label>
+        <input 
+            id="number" 
+            type="number" 
+            name="age" 
+            required 
+            min="18" 
+            max="100" 
+            placeholder="Escribe tu edad"
+        >
+
+        <!-- Campo de Selección -->
+        <label for="dropdown">Selecciona tu país:</label>
+        <select id="dropdown" name="country">
+            <option value="Colombia">Colombia
+            </option>
+            <option value="espanol">España</option>
+        </select>
+
+        <!-- Botones de Radio -->
+        <p>Selecciona tu género:</p>
+        <label>
+            <input type="radio" name="gender" value="masculino"> Masculino
+        </label>
+        <label>
+            <input type="radio" name="gender" value="femenino"> Femenino
+        </label>
+
+        <!-- Casillas de verificación -->
+        <p>Selecciona tus intereses:</p>
+        <label>
+            <input type="checkbox" name="interest" value="deportes"> Deportes
+        </label>
+        <label>
+            <input type="checkbox" name="interest" value="tecnologia"> Tecnología
+        </label>
+        <label>
+            <input type="checkbox" name="interest" value="musica"> Música
+        </label>
+
+        <!-- Área de texto para comentarios adicionales -->
+        <label for="comments">Comentarios adicionales:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Escribe tus comentarios..."></textarea>
+
+        <!-- Botón de envío -->
+        <button id="submit" type="submit">Enviar</button>
+
+    </form>
+
+</body>
+</html>
